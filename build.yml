@@ -16,6 +16,7 @@ steps:
   displayName: Publish .Net application
   workingDirectory: ./app/
 - task: PublishBuildArtifacts@1
+  inputs:
   displayName: Publish my build artifcats
   pathtoPublish: app/out5
   artifactName: publishedArtifacts
