@@ -6,7 +6,7 @@ steps:
   displayName: Check version of .NET container
 - script: dotnet test
   displayName: Test .NET application
-  workingdirectory: ./app.tests/
+  workingDirectory: ./app.tests/
 - script: dotnet run
   displayName: Run .NET application
-  workingdirectory: ./app/
+  workingDirectory: ./app/
