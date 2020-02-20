@@ -15,3 +15,7 @@ steps:
 - script: dotnet publish --output out --configuration Release --self-contained --runtime win-x64 /p:PublishSingleFile=true /p:IncludeSymbolsInSingleFIle=true
   displayName: Publish .Net application
   workingDirectory: ./app/
+- task: PublishBuildArtifacts@1
+  displayName: Publish my build artifcats
+  pathtoPublish: app/out5
+  artifactName: publishedArtifacts
