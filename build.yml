@@ -18,5 +18,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     displayName: Publish my build artifcats
-    pathtoPublish: app/out5
-    artifactName: publishedArtifacts
+    pathtoPublish: app/out
+    artifactName: Distributions
