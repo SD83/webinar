@@ -10,3 +10,6 @@ steps:
 - script: dotnet run
   displayName: Run .NET application
   workingDirectory: ./app/
+- script: dotnet publish --output out --configuration Release --self-contained --runtime win-x64 /p:PublishSingleFile=true /p:IncludeSymbolsInSingleFIle=true
+  displayName: Publish .Net application
+  workingDirectory: ./app/
